@@ -1,0 +1,15 @@
+queue:
+1.为接口继承Collection<E>，先进先出队列
+	throw exception	return special value
+insert ：        add(e)		        offer(e)
+remove:	   remove()                         poll()
+examine:       element()                      peek()
+
+
+priority Queue:
+1.为一个类继承AbstractQueue<E>实现了序列化，优先队列
+2.按照元素的优先级排序
+3.底层具体实现的数据结构较为多样和复杂：heap,bst,treap
+4.插入O(1），，取出是O（log n)
+5.插入api为add(),offer(),返回值都是boolean
+6.与queue相比多了comparator，iterator，toArray等api方法
